@@ -26,7 +26,7 @@ start_link() ->
 %% ===================================================================
 
 init([]) ->
-	{ok, IsMaster} = config:get(this_is_master_node),
+	{ok, IsMaster} = config:get(master_node),
 	if 
 		IsMaster == true ->
 			Mods = [

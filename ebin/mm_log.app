@@ -1,7 +1,7 @@
 {application,mm_log,
              [{description,"Log Tools App"},
               {vsn,"0.0.1"},
-              {registered,[]},
+              {registered,[log_collector]},
               {applications,[kernel,stdlib,mm_config]},
               {mod,{mm_log_app,[]}},
               {env,[]},
